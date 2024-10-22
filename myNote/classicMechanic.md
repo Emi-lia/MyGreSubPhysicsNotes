@@ -40,6 +40,15 @@ $W=F\Delta x$ or $W=F\Delta r cos\theta$ or $W=\int_{x_i}^{x_f}F(x)dx$(做功即
 ### 弹簧模型
 * 胡克定律$F=-kx$
 * 弹性势能$U(x)=\frac{1}{2}kx^2$
+* 弹簧的串联：$\frac{1}{k_{tot}}=\frac{1}{k_1}+\frac{1}{k_2}$
+* 弹簧的并联：$k_{tot}=k_1+k_2$
+* 弹簧系统的简谐振动方程(由牛二得出来的，自己尝试)
+$$\frac{d^2x}{dt^2}+\frac{k}{m}x=0$$
+这个方程的解为：
+$$x(t)=Acos(\omega t+\phi)$$
+其中A是振幅，表示系统的最大位移。$\omega$是角频率，单位为弧度每秒。$\phi$是相位常数，决定了初始时刻$t=0$的位移。
+**角频率**可以从运动学方程的系数得出$\omega=\sqrt{\frac{k}{m}}$
+**振动频率**：$f=\frac{1}{2\pi}\sqrt{\frac{k}{m}}$
 #### 简谐运动
 * 运动方程$x(t)=Asin(\omega t+\delta)$
 * 运动周期$T=\frac{2\pi}{\omega}$
@@ -111,7 +120,9 @@ $$V_{eff}(r)=V(r)+\frac{\hbar^2l(l+1)}{2mr^2}$$
 ### 浮力和流体
 * 浮力：$F=\rho gv$
 * equation of continuity：$\rho_1v_1A_1=\rho_2v_2A_2$
-* 伯努利方程：$P+\frac{1}{2}\rho r^2+\rho gh=constant$
+* 伯努利方程：$P+\frac{1}{2}\rho v^2+\rho gh=constant$
+* 单位时间内流过一个界面的水量保持不变：$v_1A_1=v_2A_2$
+* 一个水箱开个小孔，飚出来的水的势能是$\Delta U=mgh$，h是孔到睡眠的距离。
 
 ### 碰撞
 * 完全弹性碰撞：碰撞过程中不会因为形变等造成能量损失，碰撞后两个物体各走各的。联立动量守恒和能量守恒的公式就可以就出结果。直接记住：
