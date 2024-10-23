@@ -19,3 +19,7 @@
 
 # 计算上的背记
 * $\braket{cos^2\omega t}=\braket{sin^2 \omega t}=\frac{1}{2}$
+
+
+# 一些常见积分的结果
+$$\int_0^{\pi} cos\theta sin\theta d\theta=\frac{1}{2}\int_0^{\pi} sin2\theta d\theta=0$$

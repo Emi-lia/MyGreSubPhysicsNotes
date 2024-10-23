@@ -3,6 +3,19 @@
 ## 概述
 这一部分的内容分为：静电学，静磁学，电路，电磁感应，电磁波
 
+## 规范变化
+电磁学中的规范变化是对电磁势的一个数学变换。而电场和磁场在物理上是不会改变的。
+规范不变性。？
+
+## 旋度与散度
+$$\triangledown\times \vec{A}=(\frac{\partial A_z}{\partial y}-\frac{\partial A_y}{\partial z})\hat{x}+(\frac{\partial A_x}{\partial z}-\frac{\partial A_z}{\partial z})\hat{y}+(\frac{\partial A_y}{\partial x}-\frac{\partial A_x}{\partial y})\hat{z}$$
+$$\triangledown\cdot E=\frac{\partial E_x}{\partial x}+\frac{\partial E_y}{\partial y}+\frac{\partial E_z}{\partial z}$$
+磁场是一个旋量场，由矢量势A的旋度定义
+$$B=\triangledown \times A$$
+电场是一个散量场，由标量电势$\Phi$的梯度定义
+$$E=-\triangledown\cdot E$$
+
+
 ## 电
 * 电场：$E=\frac{F}{q_0}$
 * 电势：$V=-\int_a^b E\dot dl$
@@ -51,7 +64,8 @@ $$E=-\frac{d\Phi_B}{dt}$$
   * 导体外的电场都垂直于导体表面
 * 电容器
   * $Q=CV$,C是电容，V是平面板两段的电势差
-  * $C=\frac{\epsilon_0 A}{d}$，A是平面板的面积，d是平面板间的距离
+  * 对于“bare”电容：$C=\frac{\epsilon_0 A}{d}$，A是平面板的面积，d是平面板间的距离
+  * 对于夹了dielectric材料的电容：$c=\frac{k\epsilon_0 A}{d}$
   * $E=\frac{Q}{A\epsilon_0}$
   * $U=\frac{Q^2}{2c}=\frac{1}{2}CV^2$，U是电容器所储的能量
 * 电感器（具有大量线圈的螺线管）
@@ -86,6 +100,10 @@ $$E=-\frac{d\Phi_B}{dt}$$
 ## 磁
 ### 磁场对带电体的作用
 对于点电荷（洛伦兹力）：$F_B=qv\times B$。对于载流导体：$dF_B=Idl\times B$。
+#### 相对论效应下
+接近光速的带电粒子在磁场中运动的洛伦兹力满足：
+$$R=\frac{\gamma mv}{qB}$$
+其中$\gamma$为洛伦兹变换因子$\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}$
 ### 电生磁
 * 安培定理：$\oint B*dl=\mu_0 I$（适用于强对称性的系统）
 * 毕奥-萨伐尔定理：$dB=\frac{\mu_0}{4\pi}\frac{Idl\times \vec{r}}{r^3}$（任意分布的电流）
@@ -93,6 +111,10 @@ $$E=-\frac{d\Phi_B}{dt}$$
 
 #### 无限长直导线周围某一点的磁感应强度
 利用安培环路定理：$\oint \vec{B}d\vec{l}=\mu_0I$ 在导线周围画一个圈$2\pi rB=\mu_0 I$ 得到 $B=\frac{\mu_0 I}{2\pi r}$
+#### 通电圆环
+利用毕奥萨伐尔定律：$B=\frac{\mu_0 I R^2}{2(R^2+z^2)^{\frac{3}{2}}}$，其中z是场点到圆环平面的垂直距离
+#### 半圆电流
+利用毕奥萨伐尔定律：$B=\frac{\mu_0 I}{4R}$
 #### 无限大平面电流板一侧磁场
 $$B=\frac{\mu_0 JL}{2L}$$
 电流板上下的磁场方向相反，大小相同
@@ -182,3 +204,8 @@ $$P=\frac{q^2 a^2}{6\pi \epsilon_0 c^3}$$
 |inverter|反相器|与非门相同，将输入信号取反|
 * 与非门：就是将与门的输入全部反转
 * 或非门：就是将或门的输入全部反转
+
+
+## 磁矩
+* 磁偶极矩：$\vec{m}=I\cdot A \cdot \hat{n}$。I为电流环的面积，A为环的面积，$\hat{n}$为垂直于环面的单位矢量。
+* 扭矩公式：$\vec{r}=\vec{m}\times\vec{B}$

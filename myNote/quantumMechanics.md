@@ -24,6 +24,7 @@ $\phi(x)=Ce^{ikx},x\geq a$
 
 ## 无限深方势阱
 * 能级 $E_n= \frac{n^2 \pi^2 \hbar^2}{2mL^2}$
+* 对于有限深三维势阱来说，有三个n，即$n_x,n_y,n_z$，基态代表所有的n都是1，第一激发态代表一个n是2两个n是1，第二激发态代表两个n是2一个n是1.
 
 ## 谐振子
 * 一维能级 $E_n=\hbar\omega(n+\frac{1}{2})$
@@ -47,3 +48,8 @@ $\hat{s_x}=\frac{\hbar}{2}\delta_x$,$\hat{s_y}=\frac{\hbar}{2}\delta_y$,$\hat{s_
 ### 两个自旋1/2的粒子耦合
 * 三重态：总自旋（s=1），有三种自旋态 $|1,1>,|1,0>,|1,-1>$
 * 单重态：总自旋（s=0），只有一种自旋态 $|0,0>$
+
+## 时间演化
+时间演化算符：$U(t)=exp(-\frac{iHt}{\hbar})$
+含时间演化的波函数：$\ket{\psi(t)}=exp(-\frac{i\alpha S\cdot B t}{\hbar})\ket{\psi(t=0)}$
+
